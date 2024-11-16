@@ -226,3 +226,53 @@ body {
   background: transparent;
   border: none;
 }
+
+/* General mobile styling */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: visible;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .left-panel img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+  }
+
+  .left-panel h3 {
+    font-size: 1.5rem;
+  }
+
+  .left-panel nav a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .sidebar-icons a {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .modal-content {
+    width: 90vw;
+    max-width: 500px;
+  }
+}
