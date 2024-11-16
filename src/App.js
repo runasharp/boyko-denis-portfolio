@@ -105,7 +105,7 @@ function App() {
               <h4>Spezialist für Metrologie</h4>
               <p>Ingenieurakademie, Jekaterinburg, Russland</p>
               <p>Zeitraum: 05/2015 – 09/2015</p>
-              <p>Programm: „Metrologie und Gewährleistung der Einheitlichkeit der Messungen“</p>
+              <p>Programm: "Metrologie und Gewährleistung der Einheitlichkeit der Messungen"</p>
             </div>
             <div className="education-card">
               <h4>Ingenieur für elektronische Geräte und Anlagen</h4>
@@ -116,7 +116,7 @@ function App() {
               <h4>Elektrotechnik-Techniker</h4>
               <p>Berufslyzeum Nr. 68, Langepas, Russland</p>
               <p>Zeitraum: 09/1998 – 05/2000</p>
-              <p>Fachgebiet: „Computer, Computerkomplexe, Systeme und Netzwerke“</p>
+              <p>Fachgebiet: "Computer, Computerkomplexe, Systeme und Netzwerke"</p>
             </div>
           </section>
           <section id="languages" className="card">
