@@ -5,11 +5,12 @@ import { FaEnvelope, FaLinkedin, FaPhone } from 'react-icons/fa';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
+  const [isModalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
+      const scrollPosition = window.scrollY + window.innerHeight / 14;
       sections.forEach((section) => {
         if (
           section.offsetTop <= scrollPosition &&
@@ -33,54 +34,44 @@ function App() {
         <meta name="description" content="Portfolio von Boyko Denis, Ingenieur mit umfassender Berufserfahrung in Messtechnik und Systemoptimierung." />
       </Helmet>
       <div className="layout">
-      <aside className="left-panel">
-      <div className="sidebar">
-        <img
-          src={`${process.env.PUBLIC_URL}/profile.jpg`}
-          alt="Profilfoto von Boyko Denis"
-          className="profile-photo-large"
-        />
-        <div className="sidebar-section">
-          <h3>Boyko Denis</h3>
-          <p>Ingenieur</p>
-          <p> Ingenieur mit langjähriger Erfahrung in Messtechnik, Kalibrierung und Systemoptimierung. Mein Fokus liegt auf der Verbesserung von Prozessen, der technischen Unterstützung und der Einhaltung internationaler Normen und Vorschriften.
-          </p>
-        </div>
-        <nav>
-          {/* <a href="#about" className={activeSection === 'about' ? 'active' : ''}>Über mich</a> */}
-          <a href="#workplaces" className={activeSection === 'workplaces' ? 'active' : ''}>Berufserfahrung</a>
-          <a href="#education" className={activeSection === 'education' ? 'active' : ''}>Bildung</a>
-          <a href="#languages" className={activeSection === 'languages' ? 'active' : ''}>Sprachen</a>
-        </nav>
-        <div className="contact-info">
-          <p>
-            <a href="mailto:ing.boyko@gmail.com">ing.boyko@gmail.com</a><br />
-            Telefon: 0176 43313801
-          </p>
-        </div>
-        <div className="sidebar-icons">
-          <a href="mailto:ing.boyko@gmail.com" target="_blank" rel="noopener noreferrer">
-            <FaEnvelope />
-          </a>
-          <a href="https://www.linkedin.com/in/denis-boyko-3a172887/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-          <a href="tel:+4917643313801">
-            <FaPhone />
-          </a>
-        </div>
-        <footer className="footer">
-          <p>© 2024 Boyko Denis</p>
-        </footer>
-      </div>
-    </aside>
+        <aside className="left-panel">
+          <div className="sidebar">
+            <img
+              src={`${process.env.PUBLIC_URL}/profile.jpg`}
+              alt="Profilfoto von Boyko Denis"
+              className="profile-photo-large"
+              onClick={() => setModalOpen(true)}
+              style={{ cursor: 'pointer' }}
+            />
+            <div className="sidebar-section">
+              <h3>Boyko Denis</h3>
+              <p>Ingenieur</p>
+              <p>
+                Ingenieur mit langjähriger Erfahrung in Messtechnik, Kalibrierung und Systemoptimierung. Mein Fokus liegt auf der Verbesserung von Prozessen, der technischen Unterstützung und der Einhaltung internationaler Normen und Vorschriften.
+              </p>
+            </div>
+            <nav>
+              <a href="#workplaces" className={activeSection === 'workplaces' ? 'active' : ''}>Berufserfahrung</a>
+              <a href="#education" className={activeSection === 'education' ? 'active' : ''}>Bildung</a>
+              <a href="#languages" className={activeSection === 'languages' ? 'active' : ''}>Sprachen</a>
+            </nav>
+            <div className="sidebar-icons">
+              <a href="mailto:ing.boyko@gmail.com" target="_blank" rel="noopener noreferrer">
+                <FaEnvelope />
+              </a>
+              <a href="https://www.linkedin.com/in/denis-boyko-3a172887/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
+              <a href="tel:+4917643313801">
+                <FaPhone />
+              </a>
+            </div>
+            <footer className="footer">
+              <p>© 2024 Boyko Denis</p>
+            </footer>
+          </div>
+        </aside>
         <main className="main">
-          {/* <section id="about" className="card">
-            <h3>Über mich</h3>
-            <p>
-              Ingenieur mit langjähriger Erfahrung in Messtechnik, Kalibrierung und Systemoptimierung. Mein Fokus liegt auf der Verbesserung von Prozessen, der technischen Unterstützung und der Einhaltung internationaler Normen und Vorschriften.
-            </p>
-          </section> */}
           <section id="workplaces" className="card">
             <h3>Berufserfahrung</h3>
             <div className="workplace-card">
@@ -151,6 +142,20 @@ function App() {
           </section>
         </main>
       </div>
+
+      {/* Modal implementation */}
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={() => setModalOpen(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close-button" onClick={() => setModalOpen(false)}>&times;</span>
+            <img
+              src={`${process.env.PUBLIC_URL}/profile.jpg`}
+              alt="Profilfoto von Boyko Denis"
+              className="modal-image"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
