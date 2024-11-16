@@ -157,8 +157,17 @@ body {
 
 .footer {
   text-align: center;
-  border-top: 1px solid #333;
+  border-top: none; /* Remove default border */
   font-size: 0.9rem;
+  padding-top: 20px; /* Add padding if needed for spacing */
+}
+
+.footer .divider {
+  border: 0;
+  height: 1px;
+  background: #c4a76d; /* Golden color for consistency */
+  margin: 10px 0; /* Space around the divider */
+  opacity: 0.5; /* Slight transparency */
 }
 
 .language-bar {
