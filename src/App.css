@@ -212,6 +212,22 @@ body {
   transition: border 0.3s ease; /* Smooth transition for hover effect */
 }
 
+.card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(42, 42, 42, 0.9),
+    rgba(34, 34, 34, 0.6)
+  ); /* Adjust the colors and transparency levels as needed */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e0e0e0; /* Ensure text is readable over the gradient */
+}
+
 /* Add hover effect for golden border */
 .modal-image:hover {
   border: 3px solid #c4a76d; /* Golden border color on hover */
@@ -225,6 +241,14 @@ body {
   cursor: pointer;
   background: transparent;
   border: none;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #c4a76d; /* Golden color for consistency */
+  margin: 20px 0; /* Space around the divider */
+  opacity: 0.5; /* Slight transparency */
 }
 
 /* General mobile styling */
@@ -265,12 +289,7 @@ body {
   .sidebar-icons a {
     font-size: 1.5rem;
   }
-
-  .card {
-    padding: 15px;
-    margin: 20px auto;
-  }
-
+  
   .modal-content {
     width: 90vw;
     max-width: 500px;
