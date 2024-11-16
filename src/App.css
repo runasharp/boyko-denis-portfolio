@@ -42,10 +42,10 @@ body {
   border: 3px solid transparent;
 }
 
-
 .left-panel img:hover {
   transform: scale(1.1);
   border: 3px solid #c4a76d; /* Changed to golden color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .left-panel h3 {
@@ -155,12 +155,6 @@ body {
   margin: 5px 0;
 }
 
-.footer {
-  text-align: center;
-  border-top: none; /* Remove default border */
-  font-size: 0.9rem;
-  padding-top: 20px; /* Add padding if needed for spacing */
-}
 
 .footer .divider {
   border: 0;
@@ -238,9 +232,7 @@ body {
 }
 
 /* Add hover effect for golden border */
-.modal-image:hover {
-  border: 3px solid #c4a76d; /* Golden border color on hover */
-}
+
 .close-button {
   position: absolute;
   top: 10px;
@@ -255,9 +247,15 @@ body {
 .divider {
   border: 0;
   height: 1px;
-  background: #c4a76d; /* Golden color for consistency */
-  margin: 20px 0; /* Space around the divider */
-  opacity: 0.5; /* Slight transparency */
+  background: #c4a76d; /* Golden color */
+  margin: 10px 0;
+  opacity: 0.5;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 20px;
 }
 
 /* General mobile styling */
