@@ -174,7 +174,11 @@ body {
 }
 
 .language-bar .fill {
-  background-color: #c4a76d; /* Golden color */
+  background: linear-gradient(
+    to right,
+    #c4a76d, /* Starting golden color */
+    rgba(196, 167, 109, 0.85) /* Fading into a slightly transparent version */
+  );
   border-radius: 5px;
   height: 100%;
   position: absolute;
@@ -255,7 +259,12 @@ body {
 .footer {
   text-align: center;
   font-size: 0.9rem;
-  padding-top: 20px;
+  padding-top: 20px; /* Adjust padding to add spacing if needed */
+  padding-bottom: 10px; /* Optional padding for bottom spacing */
+  color: #e0e0e0; /* Text color for footer content */
+  background-color: #1f1f1f; /* Background color of footer if needed */
+  border-top: 1px solid #c4a76d; /* Golden divider at top */
+  margin-top: 20px; /* Optional: add margin if needed for spacing */
 }
 
 /* General mobile styling */
