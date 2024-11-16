@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/boyko-denis-portfolio/static/css/main.d5998716.css",
-    "main.js": "/boyko-denis-portfolio/static/js/main.ca1f2576.js",
-    "static/js/453.13a7cccd.chunk.js": "/boyko-denis-portfolio/static/js/453.13a7cccd.chunk.js",
-    "index.html": "/boyko-denis-portfolio/index.html",
-    "main.d5998716.css.map": "/boyko-denis-portfolio/static/css/main.d5998716.css.map",
-    "main.ca1f2576.js.map": "/boyko-denis-portfolio/static/js/main.ca1f2576.js.map",
-    "453.13a7cccd.chunk.js.map": "/boyko-denis-portfolio/static/js/453.13a7cccd.chunk.js.map"
+    "main.css": "/static/css/main.d5998716.css",
+    "main.js": "/static/js/main.82634190.js",
+    "static/js/453.13a7cccd.chunk.js": "/static/js/453.13a7cccd.chunk.js",
+    "index.html": "/index.html",
+    "main.d5998716.css.map": "/static/css/main.d5998716.css.map",
+    "main.82634190.js.map": "/static/js/main.82634190.js.map",
+    "453.13a7cccd.chunk.js.map": "/static/js/453.13a7cccd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5998716.css",
-    "static/js/main.ca1f2576.js"
+    "static/js/main.82634190.js"
   ]
 }
