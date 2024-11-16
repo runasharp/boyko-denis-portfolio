@@ -1,9 +1,14 @@
 import React from 'react';
 import './App.css'; // Ensure you have some CSS for styling
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>Boyko Denis - Engineer Portfolio</title>
+        <meta name="description" content="Portfolio of Boyko Denis, showcasing engineering projects and expertise." />
+      </Helmet>
       <header className="header">
         <div className="header-content">
         <img
