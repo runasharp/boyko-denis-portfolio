@@ -67,6 +67,7 @@ function App() {
               </a>
             </div>
             <footer className="footer">
+              <hr className="divider" />
               <p>© 2024 Boyko Denis</p>
             </footer>
           </div>

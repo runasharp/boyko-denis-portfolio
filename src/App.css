@@ -155,13 +155,12 @@ body {
   margin: 5px 0;
 }
 
-
-.footer .divider {
-  border: 0;
-  height: 1px;
-  background: #c4a76d; /* Golden color for consistency */
-  margin: 10px 0; /* Space around the divider */
-  opacity: 0.5; /* Slight transparency */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 20px;
+  padding-bottom: 10px; /* Optional for bottom spacing */
+  margin-top: 20px;
 }
 
 .language-bar {
@@ -174,11 +173,7 @@ body {
 }
 
 .language-bar .fill {
-  background: linear-gradient(
-    to right,
-    #c4a76d, /* Starting golden color */
-    rgba(196, 167, 109, 0.85) /* Fading into a slightly transparent version */
-  );
+  background-color: #c4a76d; /* Golden color */
   border-radius: 5px;
   height: 100%;
   position: absolute;
@@ -254,17 +249,6 @@ body {
   background: #c4a76d; /* Golden color */
   margin: 10px 0;
   opacity: 0.5;
-}
-
-.footer {
-  text-align: center;
-  font-size: 0.9rem;
-  padding-top: 20px; /* Adjust padding to add spacing if needed */
-  padding-bottom: 10px; /* Optional padding for bottom spacing */
-  color: #e0e0e0; /* Text color for footer content */
-  background-color: #1f1f1f; /* Background color of footer if needed */
-  border-top: 1px solid #c4a76d; /* Golden divider at top */
-  margin-top: 20px; /* Optional: add margin if needed for spacing */
 }
 
 /* General mobile styling */
